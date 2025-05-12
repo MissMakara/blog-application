@@ -1,4 +1,7 @@
 <?php
+echo "Hello WROLLLDS";
+require __DIR__ .'/../core/database.php';
+$db_instance = new DbConnect();
+$pdo_connection = $db_instance -> getConn();
 
-$app_configs = require __DIR__ .'/config/app.php';
-$secrets = require __DIR__ .'/config/config.php';
+echo "DB Connection successful";
